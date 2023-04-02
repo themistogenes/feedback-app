@@ -25,8 +25,7 @@
     "eject": "react-scripts eject",
     "server": "json-server --watch db.json --port 5000",
     "dev": "concurrently \"npm run server\" \"npm start\"",
-    "heroku-server": "json-server --watch db.json --port process.env.PORT",
-    "heroku": "npm run heroku-server && npm start"
+    "heroku": "node db.json && npm start"
   },
   "eslintConfig": {
     "extends": [
